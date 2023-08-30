@@ -1,2 +1,2 @@
 # alexrmann-test
-Test for github pages.
+Test for GitHub Pages.
