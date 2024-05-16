@@ -123,7 +123,7 @@ main {}
     padding: 0;
 }
 
-.hero--btn-signup {
+.hero--btn-sign-up {
     margin: 0;
     background-color: var(--blue-light);
     color: var(--off-white);
@@ -238,7 +238,7 @@ figcaption {
     margin: 0;
 }
 
-.cta--btn-signup {
+.cta--btn-sign-up {
     margin: 0;
     background-color: var(--blue-light);
     color: var(--off-white);
