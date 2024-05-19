@@ -50,6 +50,8 @@ body {
 	background: RGB(242,242,242);
 }
 
+/* Debug */
+
 main {
     position: absolute;
     left: 360px;
