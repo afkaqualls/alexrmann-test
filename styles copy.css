@@ -1,25 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    font-family: "Source Sans Pro", "Source Code Pro", "Space Grotesk", Helvetica, Arial, "sans-serif";
-    font-size: 10px;
-}
-
-
 html, html * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", "Source Sans Pro", "Space Grotesk", Helvetica, Arial, "sans-serif";
 }
 
 header {
     padding: 2rem;
     background-color: #FFFFFF;
-    box-shadow: 0 32px 128px 0 gray;
+    box-shadow: 0 0.25em 1em 0 gray;
     animation: slideInFromTop 1.5s ease-in-out;
 }
 
