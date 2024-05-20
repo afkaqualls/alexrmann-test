@@ -15,16 +15,94 @@
     --font-space: "Space Grotesk", Helvetica, Arial, sans-serif;
 }
 
+/* FLEX STYLES */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.flex--nav {
+    justify-content: space-between;
+}
+
+/* MAIN ELEMENTS */
 html, html * {
     padding: 0;
     margin: 0;
 }
 
+body {
+	margin-left: auto;
+	margin-right: auto;
+	background: RGB(242,242,242);
+}
+
 header {
+    display: flex;
+    align-items: center;
     padding: 2rem;
     background-color: #FFFFFF;
     box-shadow: 0 8px 32px 0 RGBA(0,0,0,0.25);
     animation: slideInFromTop 1.5s ease-in-out;
+}
+
+.logo {
+    width: 288px;
+    margin: auto;
+    padding: 1rem;
+    display: block;
+}
+
+.desc {
+    padding: 1rem 1rem 0;
+    display: block;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--grey-light);
+    padding: 0 1rem 1rem;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+.nav--list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav ul li a {
+    font-family: "Source Code Pro";
+    font-weight: 400;
+    letter-spacing: 2pt;
+    text-decoration: none;
+    color: dodgerblue;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background-color: #FFFFFF;
 }
 
 @keyframes slideInFromTop {
@@ -44,19 +122,11 @@ header {
   }
 }
 
-body {
-	margin-left: auto;
-	margin-right: auto;
-	background: RGB(242,242,242);
-}
-
 /* Debug */
 
 main {
-    display: flex;
     opacity: 0;
     width: 100%;
-    justify-content: center;
     margin-top: 2rem;
     animation: fadeIn 500ms ease-in 1.5s forwards;
 }
@@ -83,40 +153,6 @@ footer {
 
 footer p {
     padding-bottom: 0;
-}
-
-.style-logo {
-    width: 288px;
-    margin: auto;
-    padding: 1rem;
-    display: block;
-}
-
-.style-description {
-    padding: 1rem 1rem 0;
-    display: block;
-    text-align: center;
-}
-
-.style-nav {
-    padding: 0 1rem 1rem;
-}
-
-.style-nav ul {
-    list-style-type: none;
-}
-
-.style-nav ul li a {
-    font-family: "Source Code Pro";
-    font-weight: 400;
-    letter-spacing: 2pt;
-    text-decoration: none;
-    color: dodgerblue;
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    background-color: #FFFFFF;
 }
 
 .col-header {
@@ -267,11 +303,11 @@ img {
 		max-width: none;
 	}
     
-    .style-nav ul li {
+    .nav ul li {
         display: inline-block;
     }
     
-    .style-nav ul {
+    .nav ul {
         text-align: center;
     }
     
@@ -294,7 +330,7 @@ img {
         position: fixed;
         z-index: 1;
         height: 100%;
-        width: 120px;
+        width: 320px;
     }
     
     main {
@@ -312,25 +348,24 @@ img {
         padding-left: 320px;
     }
     
-    .style-logo {
+    .logo {
         float: left;
     }
     
-    .style-description {
+    .desc {
         float: left;
         padding-top: 0;
     }
     
-    .style-nav {
-        float:left;
+    .nav {
         padding-top: 0.5rem;
     }
     
-    .style-nav ul li {
+    .nav ul li {
         display: block;
     }
     
-    .style-nav ul li a {
+    .nav ul li a {
         text-align: left;
         padding: 0.5rem 0;
     }

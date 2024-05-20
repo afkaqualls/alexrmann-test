@@ -24,19 +24,26 @@
   </head>
 
   <!-- Begin Body -->
-
   <body>
+    
     <!-- Begin Header -->
-
     <header>
-      <img src="/images/ARMLogo.png" alt="Site logo">
-      <nav class="style-nav"></nav>
+      <div class="flex flex--column flex--nav">
+        <img class="logo" src="/images/ARMLogo.png" alt="Alex R. Mann">
+        <div class="desc">Description</div>
+        <nav class="nav flex--nav">
+          <ul class="nav--list flex--column">
+            <li class="nav--item"><a href="#">Link 1</a></li>
+            <li class="nav--item"><a href="#">Link 2</a></li>
+            <li class="nav--item"><a href="#">Link 3</a></li>
+          </ul>
+        </nav>
+      </div>    
     </header>
 
     <!-- Begin Main -->
-
-    <main>
-      <div>
+    <main class="">
+      <div class="container">
         <h1>Project Title</h1>
         <h2>Paragraph Heading</h2>
         <p>Paragraph text.</p>
@@ -44,14 +51,12 @@
     </main>
 
     <!-- Begin Footer -->
-
     <footer></footer>
     
     <!-- JavaScript -->
-
     <script src="index.js"></script>
 
+    <!-- End Body -->
   </body>
 
-  <!-- End Body -->
 </html>
