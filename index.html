@@ -4,67 +4,67 @@
     <!-- Head Boilerplate -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Alex R. Mann</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
 
     <!-- Author & Description -->
     <meta name="author" content="Alex R. Mann" />
     <meta
-     name="description"
-    content="Alex R. Mann is a designer of environments and experiences. This portfolio offers a selection of key projects from Alex's professional career." />
+      name="description"
+      content="Alex R. Mann is a designer of environments and experiences. This portfolio offers a selection of key projects from Alex's professional career."
+    />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
 
     <!-- Load Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <!-- Begin Body -->
   <body>
-    
-    <!-- Begin Header -->
-    <header>
-      <div class="flex flex--column flex--nav">
-        <img class="logo" src="images/ARMLogo.png" alt="Alex R. Mann">
-        <div class="desc">Description</div>
-        <nav class="nav flex--nav">
-          <ul class="nav--list flex--column">
-            <li class="nav--item"><a href="#">Link 1</a></li>
-            <li class="nav--item"><a href="#">Link 2</a></li>
-            <li class="nav--item"><a href="#">Link 3</a></li>
-          </ul>
-        </nav>
-      </div>    
-    </header>
 
-    <!-- Begin Main -->
-    <main class="">
-
-      <section class="project">
-        <div class="container">
-          <h1>Project Title</h1>
-          <h2>Paragraph Heading</h2>
-          <p>Paragraph text.</p>
+    <!-- Enclose head and body in a flex container -->
+    <div class="flex flex--row">
+    <div class="flex sidebar flex--column flex--nav">
+      <header class="flex">
+        <div class="flex flex--column flex--nav">
+          <img class="logo" src="images/ARMLogo.png" alt="Alex R. Mann" />
+          <div class="desc">Designer of Environments and Experiences</div>
+          <nav class="nav--main flex--nav">
+            <ul class="nav--list flex--column">
+              <li class="nav--item"><a href="#">Link 1</a></li>
+              <li class="nav--item"><a href="#">Link 2</a></li>
+              <li class="nav--item"><a href="#">Link 3</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
+      </header>
+      <!-- Contain footer in header-->
+      <footer class="flex">Copyright © Alex R. Mann, 2024</footer>
+    </div>
 
-    </main>
+      <!-- Begin Main -->
+      <main class="flex">
+        <section class="project">
+          <div class="project-info">
+            <h1>Project Title</h1>
+            <h2>Paragraph Heading</h2>
+            <p>Paragraph text.</p>
+          </div>
+        </section>
+      </main>
+    </div>
 
-    <!-- Begin Footer -->
-    <footer class="">
-      <div class="container flex">
-        <div class="footer-text">Copyright © Alex R. Mann 2024</div>
-      </div>
-    </footer>
-    
     <!-- JavaScript -->
     <script src="index.js"></script>
 
     <!-- End Body -->
   </body>
-
 </html>
