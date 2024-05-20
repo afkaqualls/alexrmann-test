@@ -12,7 +12,6 @@
 :root {
     --font-sans: "Source Sans Pro", Helvetica, Arial, sans-serif;
     --font-code: "Source Code Pro", Helvetica, Arial, sans-serif;
-    --font-space: "Space Grotesk", Helvetica, Arial, sans-serif;
 }
 
 /* FLEX STYLES */
@@ -247,7 +246,7 @@ h1 {
 }
 
 h2 {
-    font-family: var(--font-space);
+    font-family: var(--font-sans);
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0.75rem;
