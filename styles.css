@@ -60,7 +60,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 8px 32px 0 RGBA(0, 0, 0, 0.25);
   animation: slideInFromLeft 1.5s ease-in-out;
-  max-width: 40ch;
+  max-width: 320px;
   height: 100svh;
   height: 100dvh;
 }
@@ -227,14 +227,13 @@ p {
 }
 
 /* Mobile View */
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .container-main {
-    display: flex;
     flex-direction: column;
   }
 
   .sidebar {
-    width: 100vw;
+    position: fixed;
     z-index: 999;
   }
 
