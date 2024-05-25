@@ -194,15 +194,25 @@ img {
 /* Main Styles */
 
 .project-desc {
+  display: flex;
+  flex-direction: column;
   background-color: RGB(242, 242, 242);
   min-width: 30%;
 }
 
-.project-info {}
+.project-desc--info {
 
-.project-canvas {
+}
+
+.project-desc--figure {
   background-color: RGB(229, 229, 229);
 
+}
+
+.project-canvas {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .canvas-item {
@@ -210,7 +220,7 @@ img {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: RGB(242, 242, 242);
+  background-color: RGB(229, 229, 229);
 }
 
 .canvas-img {
