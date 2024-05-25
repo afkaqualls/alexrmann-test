@@ -209,15 +209,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
-  background-color: RGB(242, 242, 242);
+  overflow: hidden;
+  background: RGB(242, 242, 242);
 }
 
 .canvas-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .canvas-item img {
