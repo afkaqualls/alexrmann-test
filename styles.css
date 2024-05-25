@@ -16,6 +16,63 @@
   font-family: var(--font-sans);
 }
 
+/* FONT FORMATTING */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #231f20;
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--font-code);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font-serif);
+}
+
 /* FLEX STYLES */
 .container-main {
   display: flex;
@@ -39,6 +96,14 @@
   justify-content: space-between;
 }
 
+.flex--gap {
+  gap: 4em;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
 /* LAYOUT ELEMENTS */
 html,
 html * {
@@ -51,6 +116,16 @@ body {
   margin-right: auto;
   background: RGB(242, 242, 242);
 }
+
+main {
+  opacity: 0;
+  width: 100%;
+  padding: 4rem 6rem;
+  animation: fadeIn 500ms ease-in 1.5s forwards;
+  /* border: solid 3px salmon; */
+}
+
+/* Sidebar Styles */
 
 .sidebar {
   display: flex;
@@ -116,70 +191,43 @@ img {
   color: dodgerblue;
 }
 
-main {
-  opacity: 0;
-  width: 100%;
-  padding: 4rem 6rem;
-  animation: fadeIn 500ms ease-in 1.5s forwards;
-  /* border: solid 3px salmon; */
+/* Main Styles */
+
+.project-desc {
+  background-color: RGB(242, 242, 242);
+  min-width: 30%;
 }
 
-/* FONT FORMATTING */
+.project-info {}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li {
-  color: #231f20;
-  font-family: var(--font-sans);
+.project-canvas {
+  background-color: RGB(229, 229, 229);
+
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+.canvas-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+  background-color: RGB(242, 242, 242);
 }
 
-h2 {
-  font-family: var(--font-code);
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+.canvas-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
 }
 
-h3 {
-  font-size: 2rem;
-  font-weight: 200;
-  margin-bottom: 0.5rem;
+.canvas-item img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
 }
 
-h4 {
-  font-size: 1.5rem;
-  font-weight: 200;
-  margin-bottom: 0.5rem;
-}
 
-h5 {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
 
-h6 {
-  font-size: 1rem;
-  font-weight: 200;
-  margin-bottom: 2rem;
-}
-
-p {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-family: var(--font-serif);
-}
 
 /* ANIMATIONS */
 
