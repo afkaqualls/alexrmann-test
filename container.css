@@ -1,0 +1,56 @@
+/* Main Styles */
+
+main {
+    opacity: 0;
+    width: 100%;
+    padding: 4rem 6rem;
+    animation: fadeIn 500ms ease-in 1.5s forwards;
+    /* border: solid 3px salmon; */
+  }
+
+section {
+    /* Add content */
+}
+
+.project-desc {
+    display: flex;
+    flex-direction: column;
+    background-color: RGB(242, 242, 242);
+    min-width: 30%;
+  }
+  
+  .project-desc--info {
+    /* Add content */  
+  }
+  
+  .project-desc--figure {
+    background-color: RGB(229, 229, 229);
+  
+  }
+  
+  .project-canvas {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .canvas-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: RGB(229, 229, 229);
+  }
+  
+  .canvas-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .canvas-item img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
