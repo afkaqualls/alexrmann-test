@@ -12,6 +12,8 @@ section {
     /* Add content */
 }
 
+.project-caption {}
+
 .project-desc {
     display: flex;
     flex-direction: column;
