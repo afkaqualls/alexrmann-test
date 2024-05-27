@@ -1,12 +1,132 @@
-/* Main Styles */
+@charset "UTF-8";
+/* CSS Document */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  --font-sans: "Source Sans 3", Helvetica, Arial, sans-serif;
+  --font-code: "Source Code Pro", Helvetica, Arial, sans-serif;
+  --font-serif: "Source Serif 4", Times New Roman, serif;
+
+  font-family: var(--font-sans);
+}
+
+/* FONT FORMATTING */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #231f20;
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--font-code);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font-serif);
+}
+
+/* FLEX STYLES */
+.container-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+  /* border: solid 2px red; */
+}
+
+.flex--row {
+  flex-direction: row;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--nav {
+  justify-content: space-between;
+}
+
+.flex--gap {
+  gap: 4em;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+/* LAYOUT ELEMENTS */
+
+html,
+html * {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background: RGB(242, 242, 242);
+}
 
 main {
-    opacity: 0;
-    width: 100%;
-    padding: 4rem 6rem;
-    animation: fadeIn 500ms ease-in 1.5s forwards;
-    /* border: solid 3px salmon; */
-  }
+  opacity: 0;
+  width: 100%;
+  padding: 4rem 6rem;
+  animation: fadeIn 500ms ease-in 1.5s forwards;
+  /* border: solid 3px salmon; */
+}
+
+/* Main Styles */
 
 section {
     /* Add content */
