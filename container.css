@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url(./caption.css);
+
 *,
 *::before,
 *::after {
@@ -44,9 +46,19 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 200;
+
+}
+
+.caption-content h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
   margin-bottom: 0.5rem;
+}
+
+.caption-content p {
+  margin-bottom: 1em;
+  font-size: 1.25rem;
 }
 
 h4 {
@@ -124,7 +136,7 @@ main {
   padding: 4rem 6rem;
 }
 
-/* Main Styles */
+/* Project Container Styles */
 
 section {
   display: flex;
@@ -134,7 +146,7 @@ section {
     display: flex;
     flex-direction: column;
     background-color: RGB(242, 242, 242);
-    max-width: 50ch;
+    min-width: 50ch;
     border: 1px solid red;
     overflow: auto;
     flex-grow: 0;
@@ -170,7 +182,6 @@ section {
   flex-direction: column;
   border: 2px solid red;
   height: 100%;
-  width: calc(100vw*calc(1.75/16));
   flex-grow: 0;
   flex-shrink: 0;
 }
