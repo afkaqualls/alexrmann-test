@@ -1,8 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  --font-sans: "Source Sans 3", Helvetica, Arial, sans-serif;
+  --font-code: "Source Code Pro", Helvetica, Arial, sans-serif;
+  --font-serif: "Source Serif 4", Times New Roman, serif;
+
+  font-family: var(--font-sans);
+}
+
+/* FONT FORMATTING */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #231f20;
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--font-code);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font-serif);
+}
+
+/* FLEX STYLES */
+.container-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+  /* border: solid 2px red; */
+}
+
+.flex--row {
+  flex-direction: row;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--nav {
+  justify-content: space-between;
+}
+
+.flex--gap {
+  gap: 4em;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+/* LAYOUT ELEMENTS */
+html,
+html * {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background: RGB(242, 242, 242);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 6rem;
+}
+
+.container--center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-caption {
     display: flex;
     gap: 1em;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 240px;
     margin-bottom: 4em;
 }
@@ -13,13 +146,8 @@
     border-top: 1em solid #231f20;
     border-bottom: solid #231f20;
 }
-  
-.caption-content h3 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
+      
+.caption-content h3 {}
 
 .caption-content p {
     margin-bottom: 1em;
