@@ -136,7 +136,7 @@ section {
     background-color: RGB(242, 242, 242);
     max-width: 50ch;
     border: 1px solid red;
-    overflow: hidden;
+    overflow: auto;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -144,28 +144,32 @@ section {
 .project-canvas {
   display: flex;
   align-items: flex-start;
-  overflow: hidden;
+  overflow: scroll;
   border: 1px solid rebeccapurple
 
 }
 
-.canvas-gfx {
+.canvas--gfx {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
-
-.canvas-gfx img {
-  width: 100%;
   height: 100%;
-  object-fit: scale-down;
-  object-position: top;
-  align-self: flex-start;
-  border: 3px dashed rebeccapurple;
 }
 
-.canvas-caption {
+.canvas--gfx-item {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+  object-position: top left;
+  border: 3px dashed rebeccapurple;
+  box-shadow: inset 0 8px 32px 0 RGBA(0, 0, 0, 0.25);
+}
+
+.canvas--caption-bar {
+  display: flex;
+  flex-direction: column;
   border: 2px solid red;
+  height: 100%;
   width: calc(100vw*calc(1.75/16));
   flex-grow: 0;
   flex-shrink: 0;
