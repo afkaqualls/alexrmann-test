@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(./caption.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  --font-sans: "Source Sans 3", Helvetica, Arial, sans-serif;
+  --font-code: "Source Code Pro", Helvetica, Arial, sans-serif;
+  --font-serif: "Source Serif 4", Times New Roman, serif;
+
+  font-family: var(--font-sans);
+}
+
+/* FONT FORMATTING */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #231f20;
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--font-code);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+
+}
+
+.caption-content h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.caption-content p {
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font-serif);
+}
+
+/* FLEX STYLES */
+.container-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+  /* border: solid 2px red; */
+}
+
+.flex--row {
+  flex-direction: row;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--nav {
+  justify-content: space-between;
+}
+
+.flex--gap {
+  gap: 4em;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+/* LAYOUT ELEMENTS */
+
+html,
+html * {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background: RGB(242, 242, 242);
+}
+
+main {
+  width: 100%;
+  max-height: 100vh;
+  padding: 4rem 6rem;
+}
+
+/* Project Container Styles */
+
+section {
+  display: flex;
+}
+
+.project-desc {
+    display: flex;
+    flex-direction: column;
+    background-color: RGB(242, 242, 242);
+    min-width: 50ch;
+    border: 1px solid red;
+    overflow: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+  
+.project-canvas {
+  display: flex;
+  align-items: flex-start;
+  overflow: scroll;
+  border: 1px solid rebeccapurple
+
+}
+
+.canvas--gfx {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.canvas--gfx-item {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+  object-position: top left;
+  border: 3px dashed rebeccapurple;
+  box-shadow: inset 0 8px 32px 0 RGBA(0, 0, 0, 0.25);
+}
+
+.canvas--caption-bar {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  height: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.project-canvas.flex--gap {
+  gap: calc(100vw*calc(.25/16));
+}
